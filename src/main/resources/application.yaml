@@ -1,0 +1,22 @@
+#logging:
+#  level:
+#    org.springframework.web: DEBUG
+#    org.springframework.security: DEBUG
+
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+      
+security:
+  user:
+    password: password
+  oauth2:
+    client:
+      clientId: 15350e239fedac0376c8
+      clientSecret: bdb1e53c06aa2ee9aea49c620d0f2711d1e10017
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      tokenName: oauth_token
+    resource:
+      userInfoUri: https://api.github.com/user
